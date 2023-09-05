@@ -1,0 +1,7 @@
+﻿@model IEnumerable<KurumsalWeb.Models.Model.Blog>
+<ul class="cat">
+    @foreach (var item in Model)
+    {
+        <li><i class="icon-angle-right"></i><a href="/Home/BlogDetay/@item.Kategori.KategoriID">@item.Kategori.Kategori_ad</a><span>()</span></li>
+    }
+</ul>
