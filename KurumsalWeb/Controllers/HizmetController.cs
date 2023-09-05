@@ -35,6 +35,7 @@ namespace KurumsalWeb.Controllers
             {
                 if (file_LogoURL != null)
                 {
+                    // Bu çok önemli bir değişiklik!
 
                     WebImage img = new WebImage(file_LogoURL.InputStream);
                     FileInfo imgInfo = new FileInfo(file_LogoURL.FileName);
