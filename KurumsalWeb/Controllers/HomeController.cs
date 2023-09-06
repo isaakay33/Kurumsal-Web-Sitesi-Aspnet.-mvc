@@ -95,6 +95,7 @@ namespace KurumsalWeb.Controllers
             }
             db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Icerik = icerik, BlogId =blogid ,Onay=false});
             db.SaveChanges();
+           
             return Json(false, JsonRequestBehavior.AllowGet);
         }
 
